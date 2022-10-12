@@ -1,0 +1,16 @@
+myVariable = 0
+
+def when_started1():
+    global myVariable
+    # If-Then-Else
+    while True:
+        if brain.buttonCheck.pressing():
+            drivetrain.turn_for(RIGHT, 90, DEGREES)
+        else:
+            drivetrain.drive(FORWARD)
+        wait(20, MSEC)
+
+# Calibrate the Drivetrain Gyro
+calibrate_drivetrain()
+
+when_started1()
